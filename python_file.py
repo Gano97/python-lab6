@@ -21,7 +21,6 @@ def get_task(id):
 @app.route(api_endpoint+'/tasks', methods=['POST'])
 def new_task():
     task= request.json
-    print(task["description"])
     db_interaction.newTask(task["Description"], task["Urgent"])
     return jsonify(task)
 
