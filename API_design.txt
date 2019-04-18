@@ -1,0 +1,13 @@
+API for the ToDo List
+ENDPOINT: http.//localhost/api/v0
+
+/tasks ---> list of all tasks
+/tasks/1 ---> one specific task
+
+GET /tasks ---> list of (tasks/tasks' IDs)
+GET /tasks/1 ---> show the specific task (#1) and its details
+
+POST /tasks ---> add a new task
+POST /tasks/1 ---> update a specific tasks (#1), giving its details
+
+DELETE /tasks/1 ---> remove a specific task giving its ID
